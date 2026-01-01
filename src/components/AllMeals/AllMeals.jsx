@@ -63,6 +63,9 @@ export default function AllMeals() {
         </Select>
 
         <ul className="mt-5 hidden md:flex gap-5 justify-start items-center cursor-pointer flex-wrap border-b border-gray-200">
+          <li>
+            <NavLink to='' className='border rounded-2xl inline-block py-1 px-3 text-2xl text-gray-600 border-gray-600 transition-all hover:shadow-xl shadow duration-300 hover:bg-white hover:text-gray-700'>All</NavLink>
+          </li>
           {categories.map((category) => (
             <li key={category.key}>
               <NavLink
